@@ -123,7 +123,7 @@ router.post("/register", async (req, res) => {
                 password: hashedPassword
             });
             await userinlist.updateOne({ registered: true })
-            res.status(200).json(newone);
+            res.status(200).json(await User.findOne({ rollno: req.body.rollno }));
         }
 
         else {
