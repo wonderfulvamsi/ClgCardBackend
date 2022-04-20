@@ -110,7 +110,8 @@ router.post('/addbus', async (req, res) => {
             imglink: req.body.imglink,
             busnumber: req.body.busno,
             drivernumber: req.body.driverno,
-            areaswithcost: req.body.areaswithcost,
+            area: req.body.area,
+            cost: req.body.cost,
             busstops: req.body.busstops,
         });
 
